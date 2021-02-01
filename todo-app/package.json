@@ -4,10 +4,16 @@
   "description": "App to manage my tasks",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jose Antonio Palacios",
   "license": "MIT",
-  "devDependencies": {},
-  "dependencies": {}
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "inquirer": "^7.3.3"
+  }
 }
