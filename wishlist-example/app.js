@@ -32,14 +32,4 @@ switch(comando) {
 }
 
 
-// console.clear()
-
-// console.log(process.argv);
-// console.log(argv);
-
-// let wishlist = { name: "Jose", wishlist: ["Mesa", "Silla", "Macbook pro"]};
-
-// console.log("Comenzando la aplicación de tu lista de deseos".red);
-
-
 
