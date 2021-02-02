@@ -11,11 +11,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-app.get("/user", function(req, res) {
+app.get("/user", (req, res) => {
   res.json("GET local USER");
 });
 
-app.post("/user", function(req, res) {
+app.post("/user", (req, res) => {
   let body = req.body;
 
   if (body.username === undefined) {
@@ -30,7 +30,7 @@ app.post("/user", function(req, res) {
   }
 });
 
-app.put("/user/:id", function(req, res) {
+app.put("/user/:id", (req, res) => {
   let id = req.params.id;
 
   res.json({
@@ -38,7 +38,7 @@ app.put("/user/:id", function(req, res) {
   });
 });
 
-app.delete("/user", function(req, res) {
+app.delete("/user", (req, res) => {
   res.json("DELETE User");
 });
 

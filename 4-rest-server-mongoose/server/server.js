@@ -25,11 +25,11 @@ mongoose.connect("mongodb://localhost:27017/moovies", {
 
 var db = mongoose.connection;
 
-db.on("error", function(err) {
+db.on("error", (err) => {
   console.log("Connection to DB error", err);
 });
 
-db.once("open", function() {
+db.once("open", () => {
   console.log("Connection to DB successful");
 });
 
